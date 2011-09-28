@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+
+<!--      © Burning Boots       -->
+<!-- Please use a tab size of 2 -->
+
+<!DOCTYPE project>
+<project name="Burning Boots Website Build" default="all" basedir=".">
+
+	<description>The build process for the Burning Boots website.</description>
+
+	<import file="build/build.xml"/>
+</project>
