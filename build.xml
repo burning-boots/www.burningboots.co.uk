@@ -1,12 +1,23 @@
 ﻿<?xml version="1.0"?>
 
-<!--      © Burning Boots       -->
+<!--       Burning Boots        -->
 <!-- Please use a tab size of 2 -->
 
 <!DOCTYPE project>
-<project name="Burning Boots Website Build" default="all" basedir=".">
+<project name="burning-boots-website" default="all" basedir=".">
+	<description>
+The build process for the Burning Boots website.
+	</description>
 
-	<description>The build process for the Burning Boots website.</description>
+	<!-- Store this base dir -->
+	<dirname property="burning-boots-website.basedir" file="${ant.file.burning-boots-website}"/>
 
-	<import file="build/build.xml"/>
+	<!-- Load in the project properties -->
+	<property file="${burning-boots-website.basedir}/project.properties"/>
+
+	<!-- Set some default properties that can be overriden -->
+	<property name="dir.build" value="build"/>
+
+	<!-- Import the web based build -->
+	<import file="${dir.build}/build.xml"/>
 </project>
