@@ -13,11 +13,11 @@ The build process for the Burning Boots website.
 	<dirname property="burning-boots-website.basedir" file="${ant.file.burning-boots-website}"/>
 
 	<!-- Load in the project properties -->
-	<property file="${burning-boots-website.basedir}${file.separator}project.properties"/>
+	<property file="${burning-boots-website.basedir}/project.properties"/>
 
 	<!-- Set some default properties that can be overriden -->
 	<property name="dir.build" value="build"/>
 
 	<!-- Import the web based build -->
-	<import file="${dir.build}${file.separator}build.xml"/>
+	<import file="${dir.build}/build.xml"/>
 </project>
