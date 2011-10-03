@@ -6,4 +6,15 @@
  * files so that there are not multiple CSS requests
  */
 
+/* Normalizes styling across browsers */
 @import url("lib/normalize/normalize.css");
+
+/* Layouts
+ * These define various layouts of HTML content
+ */
+@import url("layout/vertical.css");
+
+/* Presentation
+ * These define the colour, backgrounds, etc of HTML content
+ */
+@import url("presentation/dark-fire.css");
