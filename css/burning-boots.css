@@ -7,14 +7,16 @@
  */
 
 /* Normalizes styling across browsers */
-@import url("lib/normalize/normalize.css");
+@import url("lib/normalize/normalize.css") all;
 
 /* Layouts
  * These define various layouts of HTML content
  */
-@import url("layout/vertical.css");
+@import url("layout/print.css") print;
+@import url("layout/vertical.css") screen;
 
 /* Presentation
  * These define the colour, backgrounds, etc of HTML content
  */
-@import url("presentation/dark-fire.css");
+@import url("presentation/print.css") print;
+@import url("presentation/dark-fire.css") screen;
