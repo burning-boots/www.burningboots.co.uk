@@ -1,0 +1,9 @@
+/* Burning Boots
+ * Please use a tab size of 8
+ */
+
+/* Generic page printing properties */
+@page {
+	/* Specify a page margin when printing */
+	margin:		2cm;
+}
