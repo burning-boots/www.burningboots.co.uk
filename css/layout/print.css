@@ -5,11 +5,11 @@
 /* Generic page printing properties */
 @page {
 	/* Specify a page margin when printing */
-	margin:		20cm;
+	margin:		2cm;
 }
 
 /* Root footer */
-footer {
+#page-footer {
 	/* Remove the footer from printing */
 	display:	none;
 }

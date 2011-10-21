@@ -8,12 +8,7 @@
 
 /* Normalizes styling across browsers */
 @import url("lib/normalize/normalize.css") all;
-
-/* Make sure all images are aligned vertically */
-img
-{
-	vertical-align:	middle;
-}
+@import url("lib/html5-boilerplate/style.css") all;
 
 /* Layouts
  * These define various layouts of HTML content
