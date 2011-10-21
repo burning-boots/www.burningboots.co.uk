@@ -10,9 +10,9 @@
 @import url("lib/normalize/normalize.css") all;
 @import url("lib/html5-boilerplate/style.css") all;
 
-/* Change the default selection colour to Burning Boots orange */
-::-moz-selection {background: #FF8000}
-::selection {background: #FF8000}
+/* Default Burning Boots overrides of the above */
+@import url("layout/default.css") all;
+@import url("presentation/default.css") all;
 
 /* Layouts
  * These define various layouts of HTML content

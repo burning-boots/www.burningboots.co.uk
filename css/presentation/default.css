@@ -1,0 +1,7 @@
+/* Burning Boots
+ * Please use a tab size of 8
+ */
+
+/* Change the default selection colour to Burning Boots orange */
+::-moz-selection {background: #FF8000}
+::selection {background: #FF8000}
