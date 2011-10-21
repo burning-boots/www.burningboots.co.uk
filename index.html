@@ -25,8 +25,9 @@
 
 	<!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
-	<!-- Need Modernizr here, all other scripts at the bottom -->
+	<!-- Need modernizr and yepnope here, all other scripts at the bottom -->
 	<script src="js/lib/modernizr/modernizr.js"></script>
+	<script src="js/lib/yepnope/yepnope.js"></script>
 </head>
 <body>
 	<!-- Container to centre content -->
@@ -77,13 +78,13 @@
 	<script src="js/lib/burning-boots/burning-boots.js"></script>
 	<script src="js/burning-boots.index.js"></script>
 
-	<!-- Google Analytics - ->
+	<!-- Google Analytics -->
 	<script>
-		window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-		Modernizr.load({
-		  load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+		window._gaq = [['_setAccount','UA-21992728-1'],['_trackPageview'],['_trackPageLoadTime']];
+		yepnope({
+		  load: ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'
 		});
-	</script>-->
+	</script>
 
 	<!-- Chrome frame for IE6 people -->
 	<!--[if lt IE 7 ]>
