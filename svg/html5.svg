@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="481" height="512" viewbox="0 0 481 512">
+	<title>HTML5 Logo Badge</title>
+	<a xlink:href="http://www.w3.org/html/logo/" target="_new">
+		<path fill="#E34F26" d="M71,460 L30,0 481,0 440,460 255,512"/>
+		<path fill="#EF652A" d="M256,472 L405,431 440,37 256,37"/>
+		<path fill="#EBEBEB" d="M256,208 L181,208 176,150 256,150 256,94 114,94 129,265 256,265zM256,355 L192,338 188,293 132,293 139,382 256,414z"/>
+		<path fill="#FFF" d="M255,208 L255,265 325,265 318,338 255,355 255,414 371,382 387,208zM255,94 L255,150 392,150 397,94z"/>
+	</a>
+</svg>
