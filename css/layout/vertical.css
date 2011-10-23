@@ -2,3 +2,11 @@
  * Please use a tab size of 8
  */
 
+/* Set up the container */
+.layout-vertical #container {
+	/* Centre the content */
+	margin:		0 auto;
+
+	/* Set a maximum width */
+	max-width:	800px;
+}

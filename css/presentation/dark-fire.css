@@ -2,3 +2,8 @@
  * Please use a tab size of 8
  */
 
+/* Set the default body styles */
+.presentation-dark-fire body {
+	/* Set the text to Burning Boots orange */
+	color: #FF8000;
+}
