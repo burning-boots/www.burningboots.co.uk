@@ -2,3 +2,21 @@
  * Please use a tab size of 8
  */
 
+/* Set up the technologies list */
+#technologies ul li{
+	/* Float them so the format nicely */
+	float:			left;
+
+	/* Remove the bullet point */
+	list-style-type:	none;
+
+	/* Make sure they have a bit of a gap between them */
+	margin-right:		10px;
+}
+#technologies ul{
+	/* Set up overflow for the floating elements */
+	overflow:		auto;
+
+	/* Remove the list indentation */
+	padding-left:		0px;
+}
