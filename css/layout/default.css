@@ -20,3 +20,17 @@
 	/* Remove the list indentation */
 	padding-left:		0px;
 }
+
+/* Page version */
+#page-version {
+	/* Float it on the right */
+	float:	right;
+}
+
+/* Hide certain stuff when there is no Javascript */
+.no-js *[data-bind] {
+	display:	none;
+}
+.no-js #page-version {
+	display:	none;
+}

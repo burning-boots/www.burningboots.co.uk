@@ -15,3 +15,9 @@
 	text-decoration:	none;
 	color:			#6EAD1A;
 }
+
+/* Page version */
+#page-version {
+	/* Make it semi-transparent as it's not that useful to users */
+	opacity:	0.75;
+}
