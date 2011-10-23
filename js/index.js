@@ -86,16 +86,15 @@
 	 */
 	page.viewModel =
 		{
-			majorVersion: 0,
-			minorVersion: 1,
-			revVersion: 0
+			/**	The version of the page control code
+			 *	@private
+			 *	@since Version 0.1.0
+			 */
+			version: [0, 1, 0]
 		};
 
-	/**	The page version in string form
-	 *	@private
-	 *	@since Version 0.1.0
-	 */
-	page.viewModel.version = page.viewModel.majorVersion + '.' + page.viewModel.minorVersion + '.' + page.viewModel.revVersion;
+	// Overload the toString method for the version
+	page.viewModel.version.__proto__.toString = function () { return page.viewModel.version.join('.'); };
 
 	/**	Private elements that can be added to the page dynamically
 	 *	@namespace	Private elements
