@@ -1,1 +1,1 @@
-qunit-20110927.js
+qunit-1.0.0.js
