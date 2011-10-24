@@ -15,7 +15,7 @@
 }
 #technologies ul{
 	/* Set up overflow for the floating elements */
-	overflow:		auto;
+	overflow:		hidden;
 
 	/* Remove the list indentation */
 	padding-left:		0px;
