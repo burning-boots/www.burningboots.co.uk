@@ -42,7 +42,7 @@
 		return;
 	}
 
-	// If the library has already been added don't add it again!
+	// If the control code has already been added don't add it again!
 	if (window.page) {
 		return;
 	}
@@ -52,32 +52,6 @@
 	 *	@since Version 0.1.0
 	 */
 	var page = {};
-
-	/**	Definitions that can be used throughout the library.
-	 *	<br/><br/>
-	 *	They are <code>Object.freeze</code>'ed in the
-	 *	<code>page.methods.init()</code> function to prevent
-	 *	values being changed.
-	 *	<br/><br/>
-	 *	These are like <code>#define</code> in C programming.
-	 *	@namespace	Private Definitions
-	 *	@private
-	 *	@since Version 0.1.0
-	 */
-	page.defines = {};
-
-	/**	Enumerators that can be used throughout the library.
-	 *	<br/><br/>
-	 *	They are <code>Object.freeze</code>'ed in the
-	 *	<code>page.methods.init()</code> function to prevent
-	 *	values being changed.
-	 *	<br/><br/>
-	 *	These are like <code>enums</code> in C programming.
-	 *	@namespace	Private enumerators
-	 *	@private
-	 *	@since Version 0.1.0
-	 */
-	page.enums = {};
 
 	/**	Private view model that can be used with Knockout JS to bind view elements
 	 *	@namespace	Private view model
@@ -90,25 +64,27 @@
 			 *	@private
 			 *	@since Version 0.1.0
 			 */
-			version: [0, 1, 0]
+			version: [0, 1, 0],
+
+			css:
+				{
+					presentationList: ko.observableArray([
+							{string: 'Dark Fire', value: 'dark-fire'}
+						]),
+
+					presentation: ko.observable(),
+
+					layoutList: ko.observableArray([
+							{string: 'Vertical', value: 'vertical'}
+						]),
+
+					layout: ko.observable()
+				}
 		};
 
 	// Overload the toString method for the version
 	page.viewModel.version.__proto__.toString = function () { return page.viewModel.version.join('.'); };
 
-	/**	Private elements that can be added to the page dynamically
-	 *	@namespace	Private elements
-	 *	@private
-	 *	@since Version 0.1.0
-	 */
-	page.elements =	{};
-
-	/**	Private event handlers
-	 *	@namespace	Private event handlers
-	 *	@private
-	 *	@since Version 0.1.0
-	 */
-	page.eventCallback = {};
 
 	/**	Private Methods
 	 *	@namespace	Private Methods
@@ -125,24 +101,14 @@
 			 */
 			init: function () {
 				try {
-					bb.log.info('Initialising Page Control Code...');
-
-					bb.log.verbose('Freezing stuff');
-					if ('function' === typeof (Object.freeze)) {
-						Object.freeze(page.defines);
-						Object.freeze(page.enums);
-					}
-
 					bb.log.info('Initialising View Model...');
-
 					ko.applyBindings(page.viewModel);
-
-					bb.log.info('Initialised View Model');
 				} catch (exception) {
-					bb.log.error('Page Control Code Initialisation...FAILED: ' + exception);
+					bb.log.error('Initialising View Model...FAILED: ' + exception);
+					$(document.documentElement).removeClass('js').addClass('no-js');
 					return;
 				}
-				bb.log.info('Page Control Code Initialisation...DONE!');
+				bb.log.info('Initialised View Model');
 			}
 		};
 
@@ -155,5 +121,5 @@
 	 *	@exports window.page as index
 	 *	@version 0.1.0
 	 */
-	window.page = {};
+	window.page = {viewModel: page.viewModel};
 }(window));

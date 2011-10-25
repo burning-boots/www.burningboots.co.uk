@@ -59,10 +59,18 @@
 
 		<!-- Page Footer -->
 		<footer id="page-footer">
-			<section id="themes">
+			<section id="themes" data-bind="visible:(css.presentationList().length > 1) || (css.presentationList().length > 1)">
 				<h1>Themes</h1>
-				<p><label for="themes-presentation">Colours</label> <select id="themes-presentation"></select></p>
-				<p><label for="themes-layout">Layout</label> <select id="themes-layout"></select></p>
+				<p data-bind="visible:css.presentationList().length > 1"">
+					<label for="themes-presentation">Colours </label>
+					<select id="themes-presentation" data-bind="options: css.presentationList, value: css.presentation, optionsText: 'string'">
+					</select>
+				</p>
+				<p data-bind="visible:css.layoutList().length > 1">
+					<label for="themes-layout">Layout </label>
+					<select id="themes-layout" data-bind="options: css.layoutList, value: css.layout, optionsText: 'string'">
+					</select>
+				</p>
 			</section> <!-- #technologies -->
 			<section id="technologies">
 				<h1>Technologies</h1>
@@ -75,7 +83,7 @@
 					<li id="technology-normalize-css"><a href="http://necolas.github.com/normalize.css/" target="_blank">normalize.css</a></li>
 				</ul>
 			</section> <!-- #technologies -->
-			<p id="page-version">v<span data-bind="text: version">0.0.0</span></p>
+			<p id="page-version" data-bind="visible: !!version">v<span data-bind="text: version">0.0.0</span></p>
 		</footer> <!-- #footer -->
 	</div> <!-- #container -->
 
