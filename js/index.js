@@ -7,11 +7,8 @@
  */
 
 /*jslint
-	devel:		true,
 	browser:	true,
 	es5:		true,
-	vars:		true,
-	plusplus:	true,
 	maxerr:		50,
 	indent:		4,
  */
@@ -20,14 +17,15 @@
 	'use strict';
 
 	// Local copies of the window objects for speed
-	var document	= window.document;
-//	var navigator	= window.navigator;
-//	var location	= window.location;
-//	var parent		= window.parent;
-	var console		= window.console;
-	var $			= window.$;
-	var ko			= window.ko;
-	var bb			= window.bb;
+	var document	= window.document,
+//		navigator	= window.navigator,
+//		location	= window.location,
+//		parent		= window.parent,
+		console		= window.console,
+		$			= window.$,
+		ko			= window.ko,
+		bb			= window.bb,
+		page		= {};
 
 	// Check the needed dependencies
 	if ((window === undefined)		||
@@ -47,12 +45,6 @@
 		return;
 	}
 
-	/**	A local private copy of our page namespace.
-	 *	@private
-	 *	@since Version 0.1.0
-	 */
-	var page = {};
-
 	/**	Private view model that can be used with Knockout JS to bind view elements
 	 *	@namespace	Private view model
 	 *	@private
@@ -69,21 +61,29 @@
 			css:
 				{
 					presentationList: ko.observableArray([
-							{string: 'Dark Fire', value: 'dark-fire'}
-						]),
+						{string: 'Dark Fire', value: 'dark-fire'}
+					]),
 
 					presentation: ko.observable(),
 
-					layoutList: ko.observableArray([
-							{string: 'Vertical', value: 'vertical'}
-						]),
+					presentationChanged: function () {
+						bb.css.presentation = page.viewModel.css.presentation().value;
+					},
 
-					layout: ko.observable()
+					layoutList: ko.observableArray([
+						{string: 'Vertical', value: 'vertical'}
+					]),
+
+					layout: ko.observable(),
+
+					layoutChanged: function () {
+						bb.css.layout = page.viewModel.css.layout().value;
+					},
 				}
 		};
 
 	// Overload the toString method for the version
-	page.viewModel.version.__proto__.toString = function () { return page.viewModel.version.join('.'); };
+	page.viewModel.version.toString = function () { return page.viewModel.version.join('.'); };
 
 
 	/**	Private Methods
@@ -101,14 +101,21 @@
 			 */
 			init: function () {
 				try {
+					bb.log.info('Initialising Page Control Code');
+
 					bb.log.info('Initialising View Model...');
 					ko.applyBindings(page.viewModel);
+					bb.log.info('Initialised View Model');
+
+					// Set the default CSS classes
+					bb.css.layout = page.viewModel.css.layout().value;
+					bb.css.presentation = page.viewModel.css.presentation().value;
 				} catch (exception) {
-					bb.log.error('Initialising View Model...FAILED: ' + exception);
+					bb.log.error('Initialising Page Control Code...FAILED: ' + exception);
 					$(document.documentElement).removeClass('js').addClass('no-js');
 					return;
 				}
-				bb.log.info('Initialised View Model');
+				bb.log.info('Initialised Page Control Code');
 			}
 		};
 
@@ -121,5 +128,5 @@
 	 *	@exports window.page as index
 	 *	@version 0.1.0
 	 */
-	window.page = {viewModel: page.viewModel};
+	window.page = {};
 }(window));
