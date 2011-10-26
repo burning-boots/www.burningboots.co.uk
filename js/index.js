@@ -78,14 +78,6 @@
 					 */
 					presentation: ko.observable(),
 
-					/**	Occurs when the presentation CSS changes
-					 *	@private
-					 *	@since Version 0.1.0
-					 */
-					presentationChanged: function () {
-						bb.css.presentation = page.viewModel.css.presentation().value;
-					},
-
 					/**	A list of layout CSS classes
 					 *	@private
 					 *	@since Version 0.1.0
@@ -99,16 +91,24 @@
 					 *	@since Version 0.1.0
 					 */
 					layout: ko.observable(),
-
-					/**	Occurs when the layout changes
-					 *	@private
-					 *	@since Version 0.1.0
-					 */
-					layoutChanged: function () {
-						bb.css.layout = page.viewModel.css.layout().value;
-					},
 				}
 		};
+
+	/**	Occurs when the presentation CSS changes
+	 *	@private
+	 *	@since Version 0.1.0
+	 */
+	page.viewModel.css.presentation.subscribe(function (value) {
+		bb.css.presentation = value.value;
+	});
+
+	/**	Occurs when the layout CSS changes
+	 *	@private
+	 *	@since Version 0.1.0
+	 */
+	page.viewModel.css.layout.subscribe(function (value) {
+		bb.css.layout = value.value;
+	});
 
 	// Overload the toString method for the version
 	page.viewModel.version.toString = function () { return page.viewModel.version.join('.'); };
