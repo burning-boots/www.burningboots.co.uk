@@ -54,9 +54,9 @@
 		{
 			/**	The version of the page control code
 			 *	@private
-			 *	@since Version 0.1.0
+			 *	@since Version 0.1.1
 			 */
-			version: [0, 1, 0],
+			version: [0, 1, 1],
 
 			css:
 				{
@@ -103,13 +103,21 @@
 				try {
 					bb.log.info('Initialising Page Control Code');
 
-					bb.log.info('Initialising View Model...');
+					bb.log.verbose('Initialising View Model...');
 					ko.applyBindings(page.viewModel);
 					bb.log.info('Initialised View Model');
 
 					// Set the default CSS classes
-					bb.css.layout = page.viewModel.css.layout().value;
-					bb.css.presentation = page.viewModel.css.presentation().value;
+					if (!bb.css.layout) {
+						bb.log.verbose('Setting default layout');
+						bb.css.layout = page.viewModel.css.layout().value;
+						bb.log.info('Set default layout');
+					}
+					if (!bb.css.presentation) {
+						bb.log.verbose('Setting default presentation');
+						bb.css.presentation = page.viewModel.css.presentation().value;
+						bb.log.info('Set default presentation');
+					}
 				} catch (exception) {
 					bb.log.error('Initialising Page Control Code...FAILED: ' + exception);
 					$(document.documentElement).removeClass('js').addClass('no-js');
