@@ -58,24 +58,52 @@
 			 */
 			version: [0, 1, 1],
 
+			/**	The CSS view model code
+			 *	@private
+			 *	@since Version 0.1.0
+			 */
 			css:
 				{
+					/**	A list of presentation CSS classes
+					 *	@private
+					 *	@since Version 0.1.0
+					 */
 					presentationList: ko.observableArray([
 						{string: 'Dark Fire', value: 'dark-fire'}
 					]),
 
+					/**	The selected presentation class
+					 *	@private
+					 *	@since Version 0.1.0
+					 */
 					presentation: ko.observable(),
 
+					/**	Occurs when the presentation CSS changes
+					 *	@private
+					 *	@since Version 0.1.0
+					 */
 					presentationChanged: function () {
 						bb.css.presentation = page.viewModel.css.presentation().value;
 					},
 
+					/**	A list of layout CSS classes
+					 *	@private
+					 *	@since Version 0.1.0
+					 */
 					layoutList: ko.observableArray([
 						{string: 'Vertical', value: 'vertical'}
 					]),
 
+					/**	The selected layout CSS class
+					 *	@private
+					 *	@since Version 0.1.0
+					 */
 					layout: ko.observable(),
 
+					/**	Occurs when the layout changes
+					 *	@private
+					 *	@since Version 0.1.0
+					 */
 					layoutChanged: function () {
 						bb.css.layout = page.viewModel.css.layout().value;
 					},
