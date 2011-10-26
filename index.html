@@ -42,6 +42,12 @@
 
 		<!-- The main section -->
 		<section id="main" role="main">
+			<noscript id="javascript-warning">
+				<h1>Uh oh. Your Javascript is dead.</h1>
+				<p>For all the features of this website you will need to enable Javascript.</p>
+				<p>Here are the <a href="http://www.enable-javascript.com/" target="_blank">instructions for enabling JavaScript in your web browser</a>.</p>
+			</noscript>
+
 			<article id="what-we-do">
 				<header>
 					<hgroup>
@@ -110,6 +116,7 @@
 
 	<!-- JavaScript at the bottom for fast page loading -->
 	<script src="js/lib/yepnope/yepnope.js"></script>
+	<script src="js/lib/respond/respond.js"></script>
 	<script src="js/lib/jquery/jquery.js"></script>
 	<script src="js/lib/jquery/jquery.tmpl.js"></script>
 	<script src="js/lib/knockout/knockout.js"></script>
@@ -120,7 +127,7 @@
 	<script>
 		window._gaq = [["_setAccount","UA-21992728-1"],["_trackPageview"],["_trackPageLoadTime"]];
 		yepnope({
-		  load: ("https:" == location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js"
+			load: ("https:" == location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js"
 		});
 	</script>
 
