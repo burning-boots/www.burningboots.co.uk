@@ -54,9 +54,9 @@
 		{
 			/**	The version of the page control code
 			 *	@private
-			 *	@since Version 0.1.1
+			 *	@since Version 0.1.2
 			 */
-			version: [0, 1, 1],
+			version: [0, 1, 2],
 
 			/**	The CSS view model code
 			 *	@private
@@ -96,7 +96,7 @@
 
 	/**	Occurs when the presentation CSS changes
 	 *	@private
-	 *	@since Version 0.1.0
+	 *	@since Version 0.1.2
 	 */
 	page.viewModel.css.presentation.subscribe(function (value) {
 		bb.css.presentation = value.value;
@@ -104,7 +104,7 @@
 
 	/**	Occurs when the layout CSS changes
 	 *	@private
-	 *	@since Version 0.1.0
+	 *	@since Version 0.1.2
 	 */
 	page.viewModel.css.layout.subscribe(function (value) {
 		bb.css.layout = value.value;
