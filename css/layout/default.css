@@ -3,7 +3,7 @@
  */
 
 /* Set up the technologies list */
-#technologies ul li{
+#technologies li{
 	/* Float them so the format nicely */
 	float:			left;
 
@@ -19,6 +19,23 @@
 
 	/* Remove the list indentation */
 	padding-left:		0px;
+}
+
+/* Set up the themes */
+#themes p {
+	/* Float them so the format nicely */
+	float:			left;
+
+	/* Make sure they are seperated */
+	margin-right:			10px;
+}
+#themes p:last-child {
+	/* Remove the last ones margin so it doesn't clip */
+	margin-right:			0px;
+}
+#themes {
+	/* Set up overflow for the floating elements */
+	overflow:		hidden;
 }
 
 /* Page version */
