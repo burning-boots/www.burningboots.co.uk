@@ -13,6 +13,10 @@
 	/* Make sure they have a bit of a gap between them */
 	margin-right:		10px;
 }
+#technologies li:last-child{
+	/* Remove the last margin */
+	margin-right:		0px;
+}
 #technologies ul{
 	/* Set up overflow for the floating elements */
 	overflow:		hidden;
