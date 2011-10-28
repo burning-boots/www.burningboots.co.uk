@@ -1,1 +1,1 @@
-../../../../burning-boots-js-lib/burning-boots-qunit.js
+burning-boots-qunit-0.3.0.js

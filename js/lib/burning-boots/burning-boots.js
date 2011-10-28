@@ -1,1 +1,1 @@
-../../../../burning-boots-js-lib/burning-boots.js
+burning-boots-0.3.0.js
