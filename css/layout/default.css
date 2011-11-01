@@ -12,6 +12,7 @@
 
 	/* Make sure they have a bit of a gap between them */
 	margin-right:		10px;
+	padding:		5px;
 }
 #technologies li:last-child {
 	/* Remove the last margin */
@@ -27,6 +28,34 @@
 #technology-html5-boilerplate img {
 	/* Round the corners */
 	border-radius:		5px;
+}
+#technology-normalize-css a {
+	/* Set the normalize the same as the website */
+	font-size:		3.5em;
+}
+#technologies img {
+	/* Animate the changes in size */
+	transition:		width 0.5s, height 0.5s;
+	-moz-transition:	width 0.5s, height 0.5s; /* Firefox 4 */
+	-webkit-transition:	width 0.5s, height 0.5s; /* Safari and Chrome */
+	-o-transition:		width 0.5s, height 0.5s; /* Opera */
+}
+#technology-normalize-css a {
+	/* Animate the changes in size */
+	transition:		font-size 0.5s;
+	-moz-transition:	font-size 0.5s; /* Firefox 4 */
+	-webkit-transition:	font-size 0.5s; /* Safari and Chrome */
+	-o-transition:		font-size 0.5s; /* Opera */
+}
+@media (max-width:480px) {
+#technologies img {
+	/* Reduce the size of the images */
+	height:		30px;
+}
+#technology-normalize-css a {
+	/* Set the normalize the same as the website */
+	font-size:		2em;
+}
 }
 
 /* Set up the themes */

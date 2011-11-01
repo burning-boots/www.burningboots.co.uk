@@ -9,8 +9,7 @@
 /* Set up the technologies list */
 #technology-normalize-css a {
 	/* Set the normalize the same as the website */
-	font:			1em/1.4 Calibri, sans-serif;
-	font-size:		3.5em;
+	font-family:		Calibri, sans-serif;
 	font-weight:		bold;
 	text-decoration:	none;
 	color:			#6EAD1A;
