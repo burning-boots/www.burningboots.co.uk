@@ -6,24 +6,27 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Burning Boots - Not Found</title> 
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Burning Boots - Not Found</title>
 	<style>
-	body { text-align: center;cursor: default;}
-	h1 { font-size: 50px; text-align: center }
-	body { font: 20px Constantia, 'Hoefler Text',  "Adobe Caslon Pro", Baskerville, Georgia, Times, serif; color: #999; text-shadow: 2px 2px 2px rgba(200, 200, 200, 0.5); }
-	::-moz-selection{ background:#FF8000; color:#fff; }
-	::selection { background:#FF8000; color:#fff; } 
-	article {display:block; text-align: left; max-width: 800px; margin: 0 auto; }
-	#url { color: #FF8000;}
-	a { color: #FF8000; text-decoration:none; }
-	a:hover { color: #000;}
-	input[type=text] {border: 1px solid #999;padding: 0px 5px;height:25px; margin: 0px 10px 0px 0px;vertical-align: middle;color: #666; background:#EEE;cursor: text;}
-	input[type=submit] {border: 1px solid #999;height:27px;vertical-align: middle;color: #666; background:#EEE}
-	input[type=submit]:hover {border: 1px solid #999;height:27px;vertical-align: middle;color: #555; background:#DDD;cursor: pointer;}
+	body {text-align:center;cursor:default}
+	h1 {font-size:50px;text-align:center}
+	body {font:20px Constantia, 'Hoefler Text', "Adobe Caslon Pro", Baskerville, Georgia, Times, serif;color:#999;text-shadow:1px 1px 1px rgba(200, 200, 200, 0.5)}
+	::-moz-selection{background:#FF8000;color:#fff}
+	::selection {background:#FF8000;color:#fff}
+	article {display:block;text-align:left;max-width:800px;margin:0 auto}
+	#url {color:#FF8000}
+	a {color:#FF8000;text-decoration:none}
+	a:hover {color:#000}
+	input[type=text] {border:1px solid #999;padding:0px 5px;width:60%;height:25px;margin:0px 10px 0px 0px;vertical-align:middle;color:#666;background:#EEE;cursor:text}
+	input[type=submit] {border:1px solid #999;height:27px;vertical-align:middle;color:#666;background:#EEE;cursor:pointer}
+	input[type=submit]:hover {color:#555;background:#DDD}
+	@media (max-width:480px) {input[type=text] {margin:0px -1px;width:90%;padding:0px}}
+	@media (max-width:480px) {input[type=submit] {width:90%;padding:0px;margin-top:10px}}
 	</style>
 	<noscript>
 		<style>
-			.need-js { display: none; }
+			.need-js {display:none;}
 		</style>
 	</noscript>
 </head>
@@ -37,7 +40,7 @@
 				<li>A mistyped address
 					<ul class="need-js">
 						<li>
-							<span>Was '<span id="url"><script>document.write(document.URL);</script></span>' really what you wanted?</span>
+							<span>Was '<span id="url"><script>document.write(document.URL.replace(/\./g,'.<wbr>').replace(/\//g,'/<wbr>'));</script></span>' really what you wanted?</span>
 						</li>
 					</ul>
 				</li>
