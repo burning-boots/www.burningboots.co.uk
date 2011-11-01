@@ -3,7 +3,7 @@
  */
 
 /* Set up the technologies list */
-#technologies li{
+#technologies li {
 	/* Float them so the format nicely */
 	float:			left;
 
@@ -13,16 +13,20 @@
 	/* Make sure they have a bit of a gap between them */
 	margin-right:		10px;
 }
-#technologies li:last-child{
+#technologies li:last-child {
 	/* Remove the last margin */
 	margin-right:		0px;
 }
-#technologies ul{
+#technologies ul {
 	/* Set up overflow for the floating elements */
 	overflow:		hidden;
 
 	/* Remove the list indentation */
 	padding-left:		0px;
+}
+#technology-html5-boilerplate img {
+	/* Round the corners */
+	border-radius:		5px;
 }
 
 /* Set up the themes */
