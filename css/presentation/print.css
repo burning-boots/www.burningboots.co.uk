@@ -2,3 +2,10 @@
  * Please use a tab size of 8
  */
 
+/* Set up the logo text */
+#burning-boots-logo-text {
+	/* Change the colours */
+	color:		black;
+	text-shadow:	none;
+	text-outline:	none;
+}
