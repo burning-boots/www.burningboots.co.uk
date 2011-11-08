@@ -9,31 +9,34 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Burning Boots - Not Found</title>
 	<style>
-	body {text-align:center;cursor:default}
-	h1 {font-size:50px;text-align:center}
-	body {font:20px Constantia, 'Hoefler Text', "Adobe Caslon Pro", Baskerville, Georgia, Times, serif;color:#999;text-shadow:1px 1px 1px rgba(200, 200, 200, 0.5)}
-	::-moz-selection{background:#FF8000;color:#fff}
-	::selection {background:#FF8000;color:#fff}
-	article {display:block;text-align:left;max-width:800px;margin:0 auto}
-	#url {color:#FF8000}
-	a {color:#FF8000;text-decoration:none}
-	a:hover {color:#000}
-	input[type=text] {border:1px solid #999;padding:0px 5px;width:60%;height:25px;margin:0px 10px 0px 0px;vertical-align:middle;color:#666;background:#EEE;cursor:text}
-	input[type=submit] {border:1px solid #999;height:27px;vertical-align:middle;color:#666;background:#EEE;cursor:pointer}
-	input[type=submit]:hover {color:#555;background:#DDD}
-	@media (max-width:480px) {input[type=text] {width:90%;padding:0px;margin:0px}}
-	@media (max-width:480px) {input[type=submit] {width:90%;padding:0px;margin:10px 0px 0px 1px}}
-	@media print {
-		body{text-shadow:none;color:#000}
-		a{color:#000}#url{color:#000}
-		#goog-fixurl{display:none}
-		a[href]:after{content:" (" attr(href) ")"}
-		a[href^="mailto:"]:after{content:"";}
-	}
+	body { text-align:center; cursor:default }
+	h1 { font-size:50px; text-align:center }
+	body { font:20px Constantia, 'Hoefler Text', "Adobe Caslon Pro", Baskerville, Georgia, Times, serif; color:#999; text-shadow:1px 1px 1px rgba(200, 200, 200, 0.5) }
+	::-moz-selection { background:#FF8000; color:#FFF }
+	::selection { background:#FF8000; color:#FFF }
+	article { display:block; text-align:left; max-width:800px; margin:0 auto }
+	#url { color:#FF8000 }
+	a { color:#FF8000; text-decoration:none }
+	a:hover { color:#000 }
+	input { border:1px solid #999; padding:10px 10px; vertical-align:middle; color:#666; background:#EEE; }
+	input[type=text] { width:60%; margin:0 10px 0 0; cursor:text }
+	input[type=submit] { cursor:pointer }
+	input[type=submit]:hover { color:#555; background:#DDD }
+	@media (max-width:480px) { 
+		input { padding:10px 0 }
+		input[type=text] { width:90%; margin:0px }
+		input[type=submit] { width:90%; margin:10px 0px 0px 1px }}
+	@media print { 
+		body{text-shadow:none; color:#000 }
+		a{color:#000}#url{color:#000 }
+		#goog-fixurl{display:none }
+		a[href]:after{content:" (" attr(href) ")" }
+		a[href^="mailto:"]:after{content:"";  }
+	 }
 	</style>
 	<noscript>
 		<style>
-			.need-js {display:none;}
+			.need-js { display:none;  }
 		</style>
 	</noscript>
 </head>
