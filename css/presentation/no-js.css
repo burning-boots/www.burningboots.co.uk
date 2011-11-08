@@ -42,3 +42,9 @@
 	/* Boarder it */
 	border:			1px solid black; 
 }
+
+/* Style the body */
+body {
+	/* Change the colour of the background */
+	background-color:	#ccc;
+}

@@ -25,10 +25,6 @@
 	/* Remove the list indentation */
 	padding-left:		0px;
 }
-#technology-html5-boilerplate img {
-	/* Round the corners */
-	border-radius:		5px;
-}
 #technologies img {
 	/* Animate the changes in size */
 	transition:		width 0.5s, height 0.5s;

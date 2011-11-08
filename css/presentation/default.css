@@ -66,6 +66,7 @@ a:hover {
 	font-size:		3.5em;
 	text-decoration:	none;
 	color:			#6EAD1A;
+	text-shadow:		0 1px 0 #fff;
 }
 #technology-normalize-css a {
 	/* Animate the changes in size */
@@ -79,6 +80,14 @@ a:hover {
 	/* Set the normalize the same as the website */
 	font-size:	2em;
 }
+}
+#technology-html5-boilerplate img {
+	/* Round the corners */
+	border-radius:		5px;
+}
+#technology-font-squirrel img {
+	/* Round the corners */
+	border-radius:		5px;
 }
 
 /* Page version */
