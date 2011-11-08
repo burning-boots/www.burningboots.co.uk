@@ -44,7 +44,7 @@
 }
 
 /* Style the body */
-body {
+.no-js body {
 	/* Change the colour of the background */
 	background-color:	#ccc;
 }
