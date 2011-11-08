@@ -1,0 +1,23 @@
+/* Burning Boots
+ * Please use a tab size of 8
+ */
+
+/* Hide certain stuff when there is no Javascript */
+.no-js *[data-bind] {
+	display:	none;
+}
+.no-js #page-version {
+	display:	none;
+}
+.no-js #themes {
+	display:	none;
+}
+
+/* Style the body */
+.no-js body {
+	/* Centre the content */
+	margin:		0 auto;
+
+	/* Set a maximum width */
+	max-width:	1024px;
+}

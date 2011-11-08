@@ -6,6 +6,10 @@
  * files so that there are not multiple CSS requests
  */
 
+/* Pull in the font faces */
+@import url("../fonts/nobile/stylesheet.css") all;
+@import url("../fonts/franchise/stylesheet.css") all;
+
 /* Normalizes styling across browsers */
 @import url("lib/normalize/normalize.css") all;
 @import url("lib/html5-boilerplate/style.css") all;
@@ -18,6 +22,7 @@
  * These define various layouts of HTML content
  */
 @import url("layout/print.css") print;
+@import url("layout/no-js.css") screen;
 @import url("layout/vertical.css") screen;
 
 /* Presentation
@@ -25,3 +30,4 @@
  */
 @import url("presentation/print.css") print;
 @import url("presentation/dark-fire.css") screen;
+@import url("presentation/no-js.css") screen;

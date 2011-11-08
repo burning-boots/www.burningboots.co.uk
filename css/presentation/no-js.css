@@ -1,0 +1,25 @@
+/* Burning Boots
+ * Please use a tab size of 8
+ */
+
+/* Set up the javascript warning to stand out */
+#javascript-warning {
+	/* Make the background look like a warning */
+	background-color:	yellow;
+
+	/* Center the content */
+	text-align:			center;
+
+	/* Sort out the text style */
+	color:			red;
+}
+#javascript-warning-cross {
+	/* Make it bigger */
+	font-size:		2em;
+
+	/* Make it stand out! */
+	color:			red;
+	text-shadow:	0 -2px 0 #000,
+					0 -1px 0 #000,
+					0 1px 0 #fff;
+}
