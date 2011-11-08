@@ -56,11 +56,12 @@
 				</li>
 				<li>An out-of-date link
 					<ul>
-						<li>If so, <a href="mailto:developer@burningboots.co.uk?Subject=404%20Error%20-%20Dead%20Link">email us to fix the link</a> or, if you're a member of <a href="http://github.com">github</a>, <a href="https://github.com/burning-boots/www.burningboots.co.uk/issues/new">create a new issue for us to solve</a>.</li>
+						<li>If so, <a id="developer-mailto" href="mailto:developer@burningboots.co.uk?Subject=404%20Error%20-%20Dead%20Link">email us to fix the link</a> or, if you're a member of <a href="http://github.com">github</a>, <a href="https://github.com/burning-boots/www.burningboots.co.uk/issues/new">create a new issue for us to solve</a>.</li>
 					</ul>
 				</li>
 			</ul>
 		</div>
+		<script>document.getElementById('developer-mailto').setAttribute('href', 'mailto:developer@burningboots.co.uk?Subject=404%20Error%20-%20' + document.URL)</script>
 		<script>var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2), GOOG_FIXURL_SITE = location.host;</script>
 		<script src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
 	</article>
