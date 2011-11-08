@@ -49,11 +49,11 @@
 	float:			left;
 
 	/* Make sure they are seperated */
-	margin-right:			10px;
+	margin-right:		10px;
 }
 #themes p:last-child {
 	/* Remove the last ones margin so it doesn't clip */
-	margin-right:			0px;
+	margin-right:		0px;
 }
 #themes {
 	/* Set up overflow for the floating elements */

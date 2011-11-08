@@ -26,12 +26,12 @@ h6 {font-size: 0.67em}
 	font-family:	FranchiseRegular, sans-serif;
 
 	/* Make it bigger */
-	font-size:		100px;
+	font-size:	100px;
 
 	/* Change the colours */
-	color:			#ff8000;
+	color:		#ff8000;
 	text-shadow:	0 -1px 0 #fff,
-					0 1px 0 #000;
+			0 1px 0 #000;
 	text-outline:	5px 0px #fff;
 }
 
@@ -40,7 +40,7 @@ h6 {font-size: 0.67em}
 	/* Set the normalize the same as the website */
 	font-family:		Calibri, sans-serif;
 	font-weight:		bold;
-	font-size:			3.5em;
+	font-size:		3.5em;
 	text-decoration:	none;
 	color:			#6EAD1A;
 }
@@ -54,7 +54,7 @@ h6 {font-size: 0.67em}
 @media (max-width:480px) {
 #technology-normalize-css a {
 	/* Set the normalize the same as the website */
-	font-size:		2em;
+	font-size:	2em;
 }
 }
 

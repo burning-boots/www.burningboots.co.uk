@@ -8,18 +8,21 @@
 	background-color:	yellow;
 
 	/* Center the content */
-	text-align:			center;
+	text-align:		center;
 
 	/* Sort out the text style */
 	color:			red;
+
+	/* Boarder it */
+	border:			1px solid black;
 }
 #javascript-warning-cross {
 	/* Make it bigger */
-	font-size:		2em;
+	font-size:	2em;
 
 	/* Make it stand out! */
-	color:			red;
+	color:		red;
 	text-shadow:	0 -2px 0 #000,
-					0 -1px 0 #000,
-					0 1px 0 #fff;
+			0 -1px 0 #000,
+			0 1px 0 #fff;
 }
