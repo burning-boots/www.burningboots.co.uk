@@ -2,6 +2,22 @@
  * Please use a tab size of 8
  */
 
+@-webkit-keyframes warning-pulse {
+	0%	{ background-color:	yellow; }
+	50%	{ background-color:	#ff9900; }
+	100%	{ background-color:	yellow; }
+}
+@-moz-keyframes warning-pulse {
+	0%	{ background-color:	yellow; }
+	50%	{ background-color:	#ff9900; }
+	100%	{ background-color:	yellow; }
+}
+@-ms-keyframes warning-pulse {
+	0%	{ background-color:	yellow; }
+	50%	{ background-color:	#ff9900; }
+	100%	{ background-color:	yellow; }
+}
+
 /* Set up the javascript warning to stand out */
 #javascript-warning {
 	/* Change the font-face */
@@ -11,6 +27,9 @@
 	/* Make the background look like a warning */
 	background-color:	yellow;
 	background-image:	url(../../img/backgrounds.png);
+	-webkit-animation:	warning-pulse 5s infinite;
+	-moz-animation:		warning-pulse 5s infinite;
+	-ms-animation:		warning-pulse 5s infinite;
 
 	/* Center the content */
 	text-align:		center;
@@ -21,5 +40,5 @@
 			0 1px 0 #fff;
 
 	/* Boarder it */
-	border:			1px solid black;
+	border:			1px solid black; 
 }
