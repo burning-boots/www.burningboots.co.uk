@@ -26,7 +26,7 @@
 
 	/* Make the background look like a warning */
 	background-color:	yellow;
-	background-image:	url(../../img/backgrounds.png);
+	background-image:	url(../../img/warning-background.png);
 	-webkit-animation:	warning-pulse 5s infinite;
 	-moz-animation:		warning-pulse 5s infinite;
 	-ms-animation:		warning-pulse 5s infinite;

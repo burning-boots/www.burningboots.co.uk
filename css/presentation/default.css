@@ -59,10 +59,6 @@ a:hover {
 	/* Make the links plain */
 	background:		none;
 }
-#technologies img {
-	/* Remove the border which fixes issues in non-chrome browsers */
-	border:		none;
-}
 #technology-normalize-css a {
 	/* Set the normalize the same as the website */
 	font-family:		Calibri, sans-serif;
