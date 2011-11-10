@@ -39,10 +39,17 @@ h6 {font-size: 0.67em}
 a {
 	/* Remove the underline */
 	text-decoration:	none;
+
 	/* Set the colour */
 	background-color:	#ff8000;
 	color:			white;
 	text-shadow:		none;
+
+	/* Smooth the background colour change */
+	transition:		background-color 0.5s;
+	-moz-transition:	background-color 0.5s; /* Firefox 4 */
+	-webkit-transition:	background-color 0.5s; /* Safari and Chrome */
+	-o-transition:		background-color 0.5s; /* Opera */
 }
 a:nth-child(2n) {background-color: #ff0080}
 a:nth-child(3n) {background-color: #cc0000}
