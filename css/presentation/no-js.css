@@ -26,7 +26,7 @@
 
 	/* Make the background look like a warning */
 	background-color:	yellow;
-	background-image:	url(../../img/warning-background.png);
+	background-image:	url('../../img/backgrounds/warning-background.png');
 	-webkit-animation:	warning-pulse 5s infinite;
 	-moz-animation:		warning-pulse 5s infinite;
 	-ms-animation:		warning-pulse 5s infinite;
@@ -36,8 +36,8 @@
 
 	/* Sort out the text style */
 	color:			red;
-	text-shadow:	0 -1px 0 #000,
-			0 1px 0 #fff;
+	text-shadow:		0 -1px 0 #000,
+				0 1px 0 #fff;
 
 	/* Boarder it */
 	border:			1px solid black; 

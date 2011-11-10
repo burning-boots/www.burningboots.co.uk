@@ -39,21 +39,33 @@
 }
 }
 
+/* Set up the page footer */
+#page-footer {
+	/* Make sure it wraps everything up */
+	overflow:	hidden;
+}
+
+/* Set up the page header */
+#page-header {
+	/* Make sure it wraps everything up */
+	overflow:	hidden;
+}
+
 /* Set up the themes */
 #themes p {
 	/* Float them so the format nicely */
-	float:			left;
+	float:		left;
 
 	/* Make sure they are seperated */
-	margin-right:		10px;
+	margin-right:	10px;
 }
 #themes p:last-child {
 	/* Remove the last ones margin so it doesn't clip */
-	margin-right:		0px;
+	margin-right:	0px;
 }
 #themes {
 	/* Set up overflow for the floating elements */
-	overflow:		hidden;
+	overflow:	hidden;
 }
 
 /* Page version */
@@ -63,7 +75,7 @@
 }
 
 /* Add some padding to the main elements */
-section > article, noscript > article, body > header, body > footer > section {
+#main > article, noscript > article, #page-header, #page-footer > section {
 	/* Padding around the element */
 	padding:	1em;
 }

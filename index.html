@@ -29,98 +29,103 @@
 	<script src="js/lib/modernizr/modernizr.js"></script>
 </head>
 <body>
-	<!-- Page Header -->
-	<header id="page-header">
-		<hgroup>
-			<h1 id="burning-boots-logo-text">Burning Boots</h1>
-			<h2>A passion for awesome.</h2>
-		</hgroup>
-	</header> <!-- #page-header -->
+	<!-- Layout container -->
+	<div id="container">
+		<!-- Page Header -->
+		<header id="page-header">
+			<hgroup>
+				<h1 id="burning-boots-logo-text">Burning Boots</h1>
+				<h2>A passion for awesome.</h2>
+			</hgroup>
+		</header> <!-- #page-header -->
 
-	<!-- The main section -->
-	<section id="main" role="main">
-		<noscript>
-			<article id="javascript-warning">
-				<h1>&times; Uh oh, your Javascript is dead.</h1>
-				<p>To enjoy all the features of this website, you will need to enable Javascript.</p>
-				<p>Here are the <a href="http://www.enable-javascript.com/" target="_blank" rel="external">instructions for enabling JavaScript in your web browser</a>.</p>
-			</article>
-		</noscript>
+		<!-- The main section -->
+		<section id="main" role="main">
+			<noscript>
+				<article id="javascript-warning">
+					<h1>&times; Uh oh, your Javascript is dead.</h1>
+					<p>To enjoy all the features of this website, you will need to enable Javascript.</p>
+					<p>Here are the <a href="http://www.enable-javascript.com/" target="_blank" rel="external">instructions for enabling JavaScript in your web browser</a>.</p>
+				</article>
+			</noscript>
 
-		<article id="what-we-do">
-			<header>
-				<hgroup>
-					<h1>What We Do</h1>
-					<h2>&hellip;and why it's great.</h2>
-				</hgroup>
-			</header>
-			<p>Founded in 2010 Burning Boots provides <i>really good</i> &mdash; well, we like to think so! &mdash; software engineering services.</p>
-			<p>There is a strong passion to create easy-to-use, clean, well-documented, functional and efficient solutions to interesting problems.</p>
-			<p>Have a look around to find out more about the company.  We provide a really nice print out of all the information on this page &ndash; just click print in your browser.</p>
-			<p>Thanks for visiting. Enjoy your stay!</p>
-		</article> <!-- #what-we-do -->
-	</section> <!-- #main -->
+			<article id="what-we-do">
+				<header>
+					<hgroup>
+						<h1>What We Do</h1>
+						<h2>&hellip;and why it's great.</h2>
+					</hgroup>
+				</header>
+				<p>Founded in 2010 Burning Boots provides <i>really good</i> &mdash; well, we like to think so! &mdash; software engineering services.</p>
+				<p>There is a strong passion to create easy-to-use, clean, well-documented, functional and efficient solutions to interesting problems.</p>
+				<p>Have a look around to find out more about the company.  We provide a really nice print out of all the information on this page &ndash; just click print in your browser.</p>
+				<p>Thanks for visiting. Enjoy your stay!</p>
+			</article> <!-- #what-we-do -->
+		</section> <!-- #main -->
 
-	<!-- Page Footer -->
-	<footer id="page-footer">
-		<section id="themes" data-bind="visible:(css.presentationList().length > 1) || (css.presentationList().length > 1)">
-			<h1>Themes</h1>
-			<p data-bind="visible:css.presentationList().length > 1">
-				<label for="themes-presentation">Colours </label>
-				<select id="themes-presentation" data-bind="options: css.presentationList, value: css.presentation, optionsText: 'string'">
-				</select>
-			</p>
-			<p data-bind="visible:css.layoutList().length > 1">
-				<label for="themes-layout">Layout </label>
-				<select id="themes-layout" data-bind="options: css.layoutList, value: css.layout, optionsText: 'string'">
-				</select>
-			</p>
-		</section> <!-- #technologies -->
-		<section id="technologies">
-			<h1>Technologies</h1>
-			<ul>
-				<li id="technology-html5">
-					<a href="http://www.w3.org/html/logo/" target="_blank" rel="external">
-						<img height="50" src="svg/html5.svg" alt="HTML5" />
-					</a>
-				</li>
-				<li id="technology-knockout-js">
-					<a href="http://knockoutjs.com/" target="_blank" rel="external">
-						<img height="50" src="img/knockout.png" alt="Knockout JS" />
-					</a>
-				</li>
-				<li id="technology-jquery">
-					<a href="http://www.jquery.com/" target="_blank" rel="external">
-						<img height="50" src="svg/jquery.svg" alt="jQuery" />
-					</a>
-				</li>
-				<li id="technology-yepnope">
-					<a href="http://yepnopejs.com/" target="_blank" rel="external">
-						<img height="50" src="img/yepnope.png" alt="yepnope" />
-					</a>
-				</li>
-				<li id="technology-html5-boilerplate">
-					<a href="http://html5boilerplate.com/" target="_blank" rel="external">
-						<img height="50" src="img/html5-boilerplate.png" alt="HTML5 Boilerplate" />
-					</a>
-				</li>
-				<li id="technology-normalize-css">
-					<a href="http://necolas.github.com/normalize.css/" target="_blank" rel="external">normalize.css</a>
-				</li>
-				<li id="technology-font-squirrel">
-					<a href="http://www.fontsquirrel.com/" target="_blank" rel="external">
-						<img height="50" src="img/font-squirrel.png" alt="Font Squirrel" />
-					</a>
-				</li>
-				<li id="technology-color-combos">
-					<a href="http://www.colorcombos.com" target="_blank" rel="external">
-						<img height="50" src="img/color-combos.png" alt="Color Combos" />
-					</a>
-				</li>
-			</ul>
-		</section> <!-- #technologies -->
-		<p id="page-version" data-bind="visible: !!version">v<span data-bind="text: version">0.0.0</span></p>
-	</footer> <!-- #footer -->
+		<!-- Page Footer -->
+		<footer id="page-footer">
+			<section id="themes" data-bind="visible:(css.presentationList().length > 1) || (css.presentationList().length > 1)">
+				<h1>Themes</h1>
+				<p data-bind="visible:css.presentationList().length > 1">
+					<label for="themes-presentation">Colours </label>
+					<select id="themes-presentation" data-bind="options: css.presentationList, value: css.presentation, optionsText: 'string'">
+					</select>
+				</p>
+				<p data-bind="visible:css.layoutList().length > 1">
+					<label for="themes-layout">Layout </label>
+					<select id="themes-layout" data-bind="options: css.layoutList, value: css.layout, optionsText: 'string'">
+					</select>
+				</p>
+			</section> <!-- #themes -->
+			<section id="technologies">
+				<h1>Technologies</h1>
+				<ul>
+					<li id="technology-html5">
+						<a href="http://www.w3.org/html/logo/" target="_blank" rel="external">
+							<img height="50" src="svg/html5.svg" alt="HTML5" />
+						</a>
+					</li>
+					<li id="technology-knockout-js">
+						<a href="http://knockoutjs.com/" target="_blank" rel="external">
+							<img height="50" src="img/knockout.png" alt="Knockout JS" />
+						</a>
+					</li>
+					<li id="technology-jquery">
+						<a href="http://www.jquery.com/" target="_blank" rel="external">
+							<img height="50" src="svg/jquery.svg" alt="jQuery" />
+						</a>
+					</li>
+					<li id="technology-yepnope">
+						<a href="http://yepnopejs.com/" target="_blank" rel="external">
+							<img height="50" src="img/yepnope.png" alt="yepnope" />
+						</a>
+					</li>
+					<li id="technology-html5-boilerplate">
+						<a href="http://html5boilerplate.com/" target="_blank" rel="external">
+							<img height="50" src="img/html5-boilerplate.png" alt="HTML5 Boilerplate" />
+						</a>
+					</li>
+					<li id="technology-normalize-css">
+						<a href="http://necolas.github.com/normalize.css/" target="_blank" rel="external">normalize.css</a>
+					</li>
+					<li id="technology-font-squirrel">
+						<a href="http://www.fontsquirrel.com/" target="_blank" rel="external">
+							<img height="50" src="img/font-squirrel.png" alt="Font Squirrel" />
+						</a>
+					</li>
+					<li id="technology-color-combos">
+						<a href="http://www.colorcombos.com" target="_blank" rel="external">
+							<img height="50" src="img/color-combos.png" alt="Color Combos" />
+						</a>
+					</li>
+				</ul>
+			</section> <!-- #technologies -->
+			<section id="version-info">
+				<p id="page-version" data-bind="visible: !!version">v<span data-bind="text: version">0.0.0</span></p>
+			</section> <!-- #version-info -->
+		</footer> <!-- #footer -->
+	</div> <!-- #container -->
 
 	<!-- JavaScript at the bottom for fast page loading -->
 	<script src="js/lib/yepnope/yepnope.js"></script>
