@@ -134,9 +134,11 @@
 	<!-- Google Analytics -->
 	<script>
 		window._gaq = [["_setAccount","UA-21992728-1"],["_trackPageview"],["_trackPageLoadTime"]];
-		yepnope({
-			load: ("https:" == location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js"
-		});
+		if (typeof(yepnope) === "function") {
+			yepnope({
+				load: ("https:" == location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js"
+			});
+		}
 	</script>
 
 	<!-- Chrome frame for IE6 people -->
