@@ -70,11 +70,13 @@
 				<p data-bind="visible:css.presentationList().length > 1">
 					<label for="themes-presentation">Colours </label>
 					<select id="themes-presentation" data-bind="options: css.presentationList, value: css.presentation, optionsText: 'string'">
+						<option>Enable JavaScript</option>
 					</select>
 				</p>
 				<p data-bind="visible:css.layoutList().length > 1">
 					<label for="themes-layout">Layout </label>
 					<select id="themes-layout" data-bind="options: css.layoutList, value: css.layout, optionsText: 'string'">
+						<option>Enable JavaScript</option>
 					</select>
 				</p>
 			</section> <!-- #themes -->
