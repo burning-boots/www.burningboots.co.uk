@@ -37,16 +37,16 @@
 		page.javaScriptFail	= document.createElement('article');
 		if (page.javaScriptFail) {
 			page.javaScriptFail.id						= 'javascript-fail';
-			page.javaScriptFail.innerHTML				= '<h1>Hmmm, looks like something broke.</h1><p>It seems the JavaScript had a hiccup on this page.</p><p>You can <a href="mailto:developer@burningboots.co.uk?Subject=JavaScript%20Error%20-%20index.js">email us about this problem</a> or, if you\'re a member of <a href="http://github.com">github</a>, <a href="https://github.com/burning-boots/www.burningboots.co.uk/issues/new">create a new issue for us to solve</a>.</p>';
+			page.javaScriptFail.innerHTML				= '<h1>Hmm, looks like something broke.</h1><p>It seems the JavaScript had a hiccup on this page.</p><p>You can <a href="mailto:developer@burningboots.co.uk?Subject=JavaScript%20Error%20-%20index.js">email us about this problem</a> or, if you\'re a member of <a href="http://github.com">github</a>, <a href="https://github.com/burning-boots/www.burningboots.co.uk/issues/new">create a new issue for us to solve</a>.</p>';
 			page.javaScriptFail.style.color				= 'black';
 			page.javaScriptFail.style.border			= '1px solid red';
-			page.javaScriptFail.style.backgroundColor	= '#e50';
+			page.javaScriptFail.style.backgroundColor	= '#ffb3c6';
 			page.javaScriptFail.style.textAlign			= 'center';
 			page.javaScriptFail.style.padding			= '1em';
 			page.javaScriptFail.add						= function () {
 				var main	= document.getElementById('main');
 				if (main) {
-					main.appendChild(this);
+					main.firstChild.parentNode.insertBefore(this, main.firstChild);
 				}
 			};
 		}
@@ -86,7 +86,7 @@
 			 *	@public
 			 *	@since Version 0.1.2
 			 */
-			version: [0, 1, 3],
+			version: [0, 1, 4],
 
 			/**	The CSS view model code
 			 *	@public
@@ -195,7 +195,7 @@
 	 *	that can be useful for development.
 	 *	@namespace	Control code for the main index page
 	 *	@exports window.page as index
-	 *	@version 0.1.3
+	 *	@version 0.1.4
 	 */
 	window.page = {};
 }(window));
