@@ -25,6 +25,9 @@ h6 {font-size: 0.67em}
 	/* Change the font-face */
 	font-family:	FranchiseRegular, sans-serif;
 
+	/* No bolding */
+	font-weight:	normal;
+
 	/* Make it bigger */
 	font-size:	100px;
 
