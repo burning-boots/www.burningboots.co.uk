@@ -44,6 +44,8 @@
 
 /* Set up the page footer */
 #page-footer {
+	/* Make sure it wraps everything up */
+	overflow:	hidden;
 }
 
 /* Set up the page header */

@@ -5,7 +5,14 @@
 /* Set the default body styles */
 .presentation-dark-fire body {
 	/* Set the text */
-	color: black;
+	color:			white;
+
+	/* Sort out the background */
+	background:		black;
+	background-image:	url('../../img/backgrounds/fire.jpg');
+	background-repeat:	no-repeat;
+	background-position:	right bottom;
+	background-attachment:	fixed;
 }
 
 /* Set up the page header */

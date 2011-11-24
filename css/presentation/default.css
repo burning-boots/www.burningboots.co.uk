@@ -9,7 +9,7 @@
 /* Style the body */
 body {
 	/* Set up the default font family */
-	font-family: NobileRegular, Constantia, 'Hoefler Text', "Adobe Caslon Pro", Baskerville, Georgia, Times, serif;
+	font-family: NobileRegular, Constantia, 'Hoefler Text', "Adobe Caslon Pro", Baskerville, Georgia, Times, sans-serif;
 }
 
 /* Set up the heading sizes */
