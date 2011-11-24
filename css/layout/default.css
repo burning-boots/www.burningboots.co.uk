@@ -4,7 +4,7 @@
 
 /* Set up the technologies list */
 #technologies li {
-	/* Float them so the format nicely */
+	/* Inline them so they centre nicely */
 	display:		inline;
 
 	/* Remove the bullet point */
@@ -35,6 +35,7 @@
 	-webkit-transition:	width 0.5s, height 0.5s; /* Safari and Chrome */
 	-o-transition:		width 0.5s, height 0.5s; /* Opera */
 }
+
 @media (max-width:480px) {
 #technologies img {
 	/* Reduce the size of the images */

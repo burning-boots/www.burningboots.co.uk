@@ -82,6 +82,16 @@ a:hover {
 }
 
 /* Set up the technologies list */
+#technologies li {
+	/* Smooth the hover */
+	transition:		opacity 0.2s ease;
+	-moz-transition:	opacity 0.2s ease; /* Firefox 4 */
+	-webkit-transition:	opacity 0.2s ease; /* Safari and Chrome */
+	-o-transition:		opacity 0.2s ease; /* Opera */
+}
+#technologies li:hover {
+	opacity:	0.7;
+}
 #technologies a {
 	/* Make the links plain */
 	background:		none;
