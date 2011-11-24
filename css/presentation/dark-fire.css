@@ -17,15 +17,10 @@
 
 /* Set up the page header */
 .presentation-dark-fire #page-header, .presentation-dark-fire #page-footer {
-	background-color:	#222;
-	color:			white;
-	background-image:	url('../../img/backgrounds/dark-stripes-45-degrees-25-opacity.png');
 }
 
 /* Set up the main articles */
 .presentation-dark-fire #main > article {
-	background-color:	#4f5;
-	background-image:	url('../../img/backgrounds/dark-stripes-45-degrees-25-opacity.png');
 }
 
 /* Set up the technologies */

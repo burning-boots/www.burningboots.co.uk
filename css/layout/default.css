@@ -58,6 +58,14 @@
 	/* Sort out the spacing for the font */
 	margin: 0 0 -0.3em 0;
 }
+/* Set up the logo */
+#burning-boots-logo {
+	/* Make sure the titles wrap around */
+	float: left;
+
+	/* Add a margin */
+	margin-right:	1em;
+}
 
 /* Set up the themes */
 #themes p {
