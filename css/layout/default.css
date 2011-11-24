@@ -50,6 +50,11 @@
 	/* Make sure it wraps everything up */
 	overflow:	hidden;
 }
+/* Set up the logo text */
+#burning-boots-logo-title {
+	/* Sort out the spacing for the font */
+	margin: 0 0 -0.3em 0;
+}
 
 /* Set up the themes */
 #themes p {

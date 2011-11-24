@@ -21,7 +21,7 @@ h5 {font-size: 0.83em}
 h6 {font-size: 0.67em}
 
 /* Set up the logo text */
-#burning-boots-logo-text {
+#burning-boots-logo-title {
 	/* Change the font-face */
 	font-family:	FranchiseRegular, sans-serif;
 
@@ -36,6 +36,23 @@ h6 {font-size: 0.67em}
 	text-shadow:	0 -1px 0 #fff,
 			0 1px 0 #000;
 	text-outline:	5px 0px #fff;
+
+	/* Smooth all changes */
+	transition:		all 0.5s ease;
+	-moz-transition:	all 0.5s ease; /* Firefox 4 */
+	-webkit-transition:	all 0.5s ease; /* Safari and Chrome */
+	-o-transition:		all 0.5s ease; /* Opera */
+}
+#burning-boots-logo-title:hover {
+	/* Burn the title! */
+	color:		white;
+	text-shadow:	  0     0   10px #fefcc9,
+			  5px  -5px 15px #feec85,
+			-10px -10px 20px #ffae34,
+			 10px -20px 25px #ec760c,
+			-10px -30px 30px #cd4606,
+			  0   -40px 35px #973716,
+			  5px -45px 40px #451b0e;
 }
 
 /* Set up the links */
@@ -49,10 +66,10 @@ a {
 	text-shadow:		none;
 
 	/* Smooth the background colour change */
-	transition:		background-color 0.5s;
-	-moz-transition:	background-color 0.5s; /* Firefox 4 */
-	-webkit-transition:	background-color 0.5s; /* Safari and Chrome */
-	-o-transition:		background-color 0.5s; /* Opera */
+	transition:		background-color 0.5s ease;
+	-moz-transition:	background-color 0.5s ease; /* Firefox 4 */
+	-webkit-transition:	background-color 0.5s ease; /* Safari and Chrome */
+	-o-transition:		background-color 0.5s ease; /* Opera */
 }
 a:nth-child(2n) {background-color: #ff0080}
 a:nth-child(3n) {background-color: #cc0000}
