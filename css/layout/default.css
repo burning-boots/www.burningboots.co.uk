@@ -5,7 +5,7 @@
 /* Set up the technologies list */
 #technologies li {
 	/* Float them so the format nicely */
-	float:			left;
+	display:		inline;
 
 	/* Remove the bullet point */
 	list-style-type:	none;
@@ -19,13 +19,16 @@
 	margin-right:		0px;
 }
 #technologies ul {
-	/* Set up overflow for the floating elements */
-	overflow:		hidden;
+	/* Centre the technologies */
+	text-align:		center;
 
 	/* Remove the list indentation */
 	padding-left:		0px;
 }
 #technologies img {
+	/* Make sure they have a bit of a gap between them */
+	margin-top:		10px;
+
 	/* Animate the changes in size */
 	transition:		width 0.5s, height 0.5s;
 	-moz-transition:	width 0.5s, height 0.5s; /* Firefox 4 */
@@ -41,8 +44,6 @@
 
 /* Set up the page footer */
 #page-footer {
-	/* Make sure it wraps everything up */
-	overflow:	hidden;
 }
 
 /* Set up the page header */
@@ -59,7 +60,7 @@
 /* Set up the themes */
 #themes p {
 	/* Float them so the format nicely */
-	float:		left;
+	display:	inline;
 
 	/* Make sure they are seperated */
 	margin-right:	10px;
@@ -67,10 +68,6 @@
 #themes p:last-child {
 	/* Remove the last ones margin so it doesn't clip */
 	margin-right:	0px;
-}
-#themes {
-	/* Set up overflow for the floating elements */
-	overflow:	hidden;
 }
 
 /* Page version */

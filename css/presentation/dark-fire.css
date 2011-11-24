@@ -9,7 +9,7 @@
 }
 
 /* Set up the page header */
-.presentation-dark-fire #page-header {
+.presentation-dark-fire #page-header, .presentation-dark-fire #page-footer {
 	background-color:	#222;
 	color:			white;
 	background-image:	url('../../img/backgrounds/dark-stripes-45-degrees-25-opacity.png');
@@ -21,8 +21,20 @@
 	background-image:	url('../../img/backgrounds/dark-stripes-45-degrees-25-opacity.png');
 }
 
-/* Set up the page footer */
-.presentation-dark-fire #page-footer {
-	background-color:	grey;
+/* Set up the technologies */
+.presentation-dark-fire #technologies > ul {
+	border:			white 5px solid;
+	border-radius:		0 15px;
 	background-image:	url('../../img/backgrounds/light-stripes-45-degrees-25-opacity.png');
+	background-color:	#ffc040;
+	padding:		30px 10px;
+
+	/* Smooth all changes */
+	transition:		border-radius 0.5s ease;
+	-moz-transition:	border-radius 0.5s ease; /* Firefox 4 */
+	-webkit-transition:	border-radius 0.5s ease; /* Safari and Chrome */
+	-o-transition:		border-radius 0.5s ease; /* Opera */
+}
+.presentation-dark-fire #technologies > ul:hover {
+	border-radius:		15px 0;
 }
