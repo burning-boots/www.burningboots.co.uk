@@ -13,3 +13,15 @@
 	/* Remove the footer from printing */
 	display:	none;
 }
+
+/* Sort out the header */
+#page-header {
+	text-align:	center;
+}
+
+/* Set up the logo text */
+#burning-boots-logo {
+	/* Make the logo smaller */
+	width:	100px;
+	height:	100px;
+}

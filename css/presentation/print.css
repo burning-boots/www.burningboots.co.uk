@@ -2,10 +2,16 @@
  * Please use a tab size of 8
  */
 
+/* Set up the body */
+body {
+	font-size:	0.6em;
+}
+
 /* Set up the logo text */
-#burning-boots-logo-text {
+#burning-boots-logo-title {
 	/* Change the colours */
 	color:		black;
 	text-shadow:	none;
 	text-outline:	none;
+	font-size:	75px;
 }
