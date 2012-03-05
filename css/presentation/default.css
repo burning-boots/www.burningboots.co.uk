@@ -20,7 +20,14 @@ h4 {font-size: 1em}
 h5 {font-size: 0.83em}
 h6 {font-size: 0.67em}
 
-/* Set up the logo text */
+/* Set up the logo */
+#burning-boots-logo {
+	/* Smooth all changes */
+	transition:		all 0.5s ease;
+	-moz-transition:	all 0.5s ease; /* Firefox 4 */
+	-webkit-transition:	all 0.5s ease; /* Safari and Chrome */
+	-o-transition:		all 0.5s ease; /* Opera */
+}
 #burning-boots-logo-title {
 	/* Change the font-face */
 	font-family:	FranchiseRegular, sans-serif;
@@ -29,7 +36,8 @@ h6 {font-size: 0.67em}
 	font-weight:	normal;
 
 	/* Make it bigger */
-	font-size:	100px;
+	font-size:	5em;
+	line-height:	90%;
 
 	/* Change the colours */
 	color:		#ff8000;
@@ -37,11 +45,31 @@ h6 {font-size: 0.67em}
 			0 1px 0 #000;
 	text-outline:	5px 0px #fff;
 
+	/* Sort out the spacing for the font */
+	margin:		.1em 0;
+
 	/* Smooth all changes */
 	transition:		all 0.5s ease;
 	-moz-transition:	all 0.5s ease; /* Firefox 4 */
 	-webkit-transition:	all 0.5s ease; /* Safari and Chrome */
 	-o-transition:		all 0.5s ease; /* Opera */
+}
+@media (min-width:481px) {
+#burning-boots-logo {
+	/* Make it bigger! */
+	width:		200px;
+	height:		200px;
+}
+#burning-boots-logo-title {
+	/* Make it bigger */
+	font-size:	7em;
+}
+}
+@media (min-width:769px) {
+#burning-boots-logo-title {
+	/* Make it bigger */
+	font-size:	8em;
+}
 }
 #burning-boots-logo-title:hover {
 	/* Burn the title! */
@@ -53,6 +81,10 @@ h6 {font-size: 0.67em}
 			-10px -30px 30px #cd4606,
 			  0   -40px 35px #973716,
 			  5px -45px 40px #451b0e;
+}
+#burning-boots-logo-subtitle {
+	/* Sort out the spacing for the font */
+	margin:		0;
 }
 
 /* Set up the links */
@@ -100,7 +132,7 @@ a:hover {
 	/* Set the normalize the same as the website */
 	font-family:		Calibri, sans-serif;
 	font-weight:		bold;
-	font-size:		3.5em;
+	font-size:		2em;
 	text-decoration:	none;
 	color:			#6EAD1A;
 	text-shadow:		0 1px 0 #fff;
@@ -112,10 +144,10 @@ a:hover {
 	-webkit-transition:	font-size 0.5s; /* Safari and Chrome */
 	-o-transition:		font-size 0.5s; /* Opera */
 }
-@media (max-width:480px) {
+@media (min-width:481px) {
 #technology-normalize-css a {
 	/* Set the normalize the same as the website */
-	font-size:	2em;
+	font-size:	3.5em;
 }
 }
 #technology-html5-boilerplate img {

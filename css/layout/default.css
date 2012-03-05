@@ -2,6 +2,13 @@
  * Please use a tab size of 8
  */
 
+/* Apply a natural box layout model to all elements */
+* {
+	-moz-box-sizing:	border-box;
+	-webkit-box-sizing:	border-box;
+	box-sizing:		border-box;
+}
+
 /* Set up the technologies list */
 #technologies li {
 	/* Inline them so they centre nicely */
@@ -34,12 +41,13 @@
 	-moz-transition:	width 0.5s, height 0.5s; /* Firefox 4 */
 	-webkit-transition:	width 0.5s, height 0.5s; /* Safari and Chrome */
 	-o-transition:		width 0.5s, height 0.5s; /* Opera */
+	-ms-transition:		width 0.5s, height 0.5s; /* Internet Explorer */
 }
 
-@media (max-width:480px) {
+@media (min-width:481px) {
 #technologies img {
-	/* Reduce the size of the images */
-	height:		30px;
+	/* Increase the size of the images */
+	height:		50px;
 }
 }
 
@@ -49,15 +57,21 @@
 	overflow:	hidden;
 }
 
+
 /* Set up the page header */
 #page-header {
+	/* Centre everything */
+	text-align:	center;
+}
+
+@media (min-width:481px) {
+/* Set up the page header */
+#page-header {
+	/* Left everything */
+	text-align:	left;
+
 	/* Make sure it wraps everything up */
 	overflow:	hidden;
-}
-/* Set up the logo text */
-#burning-boots-logo-title {
-	/* Sort out the spacing for the font */
-	margin: 0 0 -0.3em 0;
 }
 /* Set up the logo */
 #burning-boots-logo {
@@ -66,6 +80,7 @@
 
 	/* Add a margin */
 	margin-right:	1em;
+}
 }
 
 /* Set up the themes */
